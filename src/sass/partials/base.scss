@@ -1,9 +1,9 @@
-.container {
-  display: flex;
+body {
+  background-color: black;
 }
 
 .mainNav {
-  width: 200px;
+  width: 15%;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -11,6 +11,7 @@
   align-content: space-between;
   background-color: black;
   color: white;
+  position: fixed;
 
   a {
     color: #fff;
@@ -47,10 +48,22 @@
     color: blue;
     border: 1px solid blue;
   }
+
+  h2 a:hover {
+    color: blue;
+  }
+}
+
+[aria-current] {
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #000;
 }
 
 .content {
-  width: 100%;
+  margin-left: 15%;
+  width: 85%;
+  background-color: #fff;
 
   header {
     display: flex;
@@ -120,4 +133,38 @@
   transform: rotate(45deg);
   align-self: center;
   margin-right: 10px;
+}
+
+.wholeCalendar {
+  margin: 20px;
+  border: 1px solid #000;
+
+  li {
+    height: 100px;
+  }
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.weekdays {
+  li {
+    border: 1px solid #000;
+    padding: 5px;
+    font-family: "PangramSansRounded";
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+.days {
+  li {
+    padding: 5px;
+    border: 1px solid #000;
+    font-family: "PangramSansRounded";
+    font-weight: 500;
+    font-size: 16px;
+  }
 }
