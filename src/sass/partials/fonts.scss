@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "PangramSansRounded";
+  src: url("/assets/fonts/PPPangramSansRounded-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "PangramSansRounded";
+  src: url("/assets/fonts/PPPangramSansRounded-Semibold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "ObjectSans";
+  src: url("/assets/fonts/ObjectSans-Regular.woff2") format("woff2");
+  src: url("/assets/fonts/ObjectSans-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "ObjectSans";
+  src: url("/assets/fonts/ObjectSans-Thin.woff2") format("woff2");
+  src: url("/assets/fonts/ObjectSans-Thin.woff") format("woff");
+  font-weight: 200;
+}

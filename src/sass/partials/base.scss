@@ -9,6 +9,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-between;
+  background-color: black;
+  color: white;
 
   h2 {
     font-family: "PangramSansRounded";
@@ -25,6 +27,20 @@
     font-family: "PangramSansRounded";
     font-weight: 500;
     font-size: 16px;
+    border: 1px solid #fff;
+
+    h3 {
+      margin: 5px 0;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+  }
+
+  li:hover {
+    color: blue;
+    border: 1px solid blue;
   }
 }
 
@@ -34,6 +50,7 @@
   header {
     display: flex;
     justify-content: space-between;
+    background-color: yellow;
 
     h2 {
       font-family: "PangramSansRounded";
@@ -50,7 +67,7 @@
     }
 
     li {
-      margin: 10px;
+      margin: 20px;
       font-family: "PangramSansRounded";
       font-weight: 500;
       font-size: 16px;
@@ -66,7 +83,7 @@
     font-family: "PangramSansRounded";
     font-weight: 500;
     font-size: 48px;
-    margin: 20px;
+    margin: 20px 20px 0 20px;
   }
 }
 
@@ -78,6 +95,8 @@
   margin: 20px;
   display: flex;
   justify-content: space-between;
+  border: 1px solid #000;
+  border-radius: 5px;
 
   h4 {
     margin: 5px;
