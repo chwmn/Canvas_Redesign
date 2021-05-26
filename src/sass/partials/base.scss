@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+}
+
+.mainNav {
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+
+  h2 {
+    font-family: "PangramSansRounded";
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    margin: 20px;
+  }
+
+  li {
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "PangramSansRounded";
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+.content {
+  width: 100%;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      font-family: "PangramSansRounded";
+      font-weight: 500;
+      font-size: 32px;
+      margin: 20px;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    li {
+      margin: 10px;
+      font-family: "PangramSansRounded";
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+}
+
+.pageHead {
+  display: flex;
+  justify-content: space-between;
+
+  h1 {
+    font-family: "PangramSansRounded";
+    font-weight: 500;
+    font-size: 48px;
+    margin: 20px;
+  }
+}
+
+.pageItem {
+  padding: 10px;
+  font-family: "PangramSansRounded";
+  font-weight: 500;
+  font-size: 16px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  h4 {
+    margin: 5px;
+  }
+
+  p {
+    margin: 5px 5px 5px 20px;
+  }
+}
+
+.arrow {
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  align-self: center;
+  margin-right: 10px;
+}
