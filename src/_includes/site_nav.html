@@ -1,39 +1,15 @@
 <nav class="mainNav">
-  <h2>HOME</h2>
-  <ul>
+  <h2><a href="/index.html">HOME</a></h2>
+  <section>
       {% assign site_nav = collections.class | sortByPageOrder %}
       {% for item in site_nav %}
-      <li {% if page.url == item.url %} aria-current="page" {% endif %}>
-        <h3>{{ item.data.class }}</h3>
-        <p>{{ item.data.startTime }}-{{ item.data.endTime }}</p>
-        <p>{{ item.data.location }}</p>
-      </li>
+      <a href="{{ item.url }}">
+        <div class="classButton" {% if page.url == item.url %} aria-current="page" {% endif %}>
+          <h3>{{ item.data.class }}</h3>
+          <p>{{ item.data.startTime }}-{{ item.data.endTime }}</p>
+          <p>{{ item.data.location }}</p>
+        </div></a>
       {% endfor %}
-    <!-- <li>
-      <h3>CLASS 1</h3>
-      <p>8:00AM-10:00AM</p>
-      <p>BR 101</p>
-    </li>
-    <li>
-      <h3>CLASS 2</h3>
-      <p>8:00AM-10:00AM</p>
-      <p>BR 201</p>
-    </li>
-    <li>
-      <h3>CLASS 3</h3>
-      <p>8:00AM-10:00AM</p>
-      <p>BR 301</p>
-    </li>
-    <li>
-      <h3>CLASS 4</h3>
-      <p>8:00AM-10:00AM</p>
-      <p>BR 401</p>
-    </li>
-    <li>
-      <h3>CLASS 5</h3>
-      <p>8:00AM-10:00AM</p>
-      <p>BR 501</p>
-    </li> -->
-  </ul>
+  </section>
   <h2>PROFILE</h2>
 </nav>
