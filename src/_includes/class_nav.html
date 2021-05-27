@@ -1,10 +1,19 @@
 <nav>
   <ul>
+    {% assign class_nav = collections.classNav | sortByPageOrder%}
+    {% for item in class_nav %}
+    <li {% if page.url == item.url %} aria-current="page" {% endif %}>
+      <a href="{{item.url}}">{{ item.data.pageTitle }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <!-- <ul>
     <li>CLASS HOME</li>
     <li>ASSIGNMENTS</li>
     <li>MODULES</li>
     <li>CLASS CALENDAR</li>
     <li>SYLLABUS</li>
     <li>GRADE</li>
-  </ul>
+  </ul> -->
 </nav>

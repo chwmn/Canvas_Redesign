@@ -2,8 +2,13 @@ body {
   background-color: black;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  position: relative;
+}
+
 .mainNav {
-  width: 15%;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -11,7 +16,9 @@ body {
   align-content: space-between;
   background-color: black;
   color: white;
+  grid-column: 1 / 2;
   position: fixed;
+  width: 200px;
 
   a {
     color: #fff;
@@ -52,18 +59,21 @@ body {
   h2 a:hover {
     color: blue;
   }
-}
 
-[aria-current] {
-  border: 1px solid #fff;
-  background-color: #fff;
-  color: #000;
+  [aria-current] {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000;
+  }
 }
 
 .content {
-  margin-left: 15%;
-  width: 85%;
+  // margin-left: 15%;
+  width: 100%;
   background-color: #fff;
+  min-height: 100vh;
+  padding-bottom: 20px;
+  grid-column: 2 / 3;
 
   header {
     display: flex;
@@ -85,10 +95,28 @@ body {
     }
 
     li {
-      margin: 20px;
+      margin: 10px;
       font-family: "PangramSansRounded";
       font-weight: 500;
       font-size: 16px;
+      padding: 10px;
+      background-color: #fff;
+      border: 2px solid #fff;
+      border-radius: 5px;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    [aria-current] {
+      background-color: #000;
+      border: 2px solid #000;
+
+      a {
+        color: #fff;
+      }
     }
   }
 }
@@ -113,7 +141,7 @@ body {
   margin: 20px;
   display: flex;
   justify-content: space-between;
-  border: 1px solid #000;
+  border: 2px solid #000;
   border-radius: 5px;
 
   h4 {
@@ -140,7 +168,6 @@ body {
   border: 1px solid #000;
 
   li {
-    height: 100px;
   }
 }
 
@@ -151,20 +178,22 @@ body {
 
 .weekdays {
   li {
-    border: 1px solid #000;
+    border: 0.25px solid #000;
     padding: 5px;
     font-family: "PangramSansRounded";
     font-weight: 500;
     font-size: 16px;
+    overflow: hidden;
   }
 }
 
 .days {
   li {
     padding: 5px;
-    border: 1px solid #000;
+    border: 0.25px solid #000;
     font-family: "PangramSansRounded";
     font-weight: 500;
     font-size: 16px;
+    height: 100px;
   }
 }
