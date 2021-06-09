@@ -23,3 +23,10 @@
   src: url("/assets/fonts/ObjectSans-Thin.woff") format("woff");
   font-weight: 200;
 }
+
+@font-face {
+  font-family: "TelegrafBold";
+  src: url("/assets/fonts/Telegraf-Bold.woff2") format("woff2");
+  src: url("/assets/fonts/Telegraf-Bold.woff") format("woff");
+  font-weight: 200;
+}

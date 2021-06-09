@@ -1,0 +1,60 @@
+.mainNav {
+  align-content: space-between;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 1 / 2;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  width: 200px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  h2 {
+    font-family: var(--header-font);
+    font-size: 32px;
+    font-weight: 500;
+    margin: 20px;
+    text-align: center;
+  }
+
+  a .classButton {
+    background-color: var(--class-color);
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #000;
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px;
+    padding: 10px;
+
+    h3 {
+      margin: 5px 0;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+  }
+
+  .classButton:hover {
+    color: var(--hover-color);
+    border: 1px solid var(--hover-color);
+  }
+
+  h2 a:hover {
+    color: var(--hover-color);
+  }
+
+  [aria-current] {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #000;
+  }
+}
