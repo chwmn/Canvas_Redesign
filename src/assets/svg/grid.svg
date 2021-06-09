@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
   <g>
-    <rect x="0.25" y="0.25" width="29.5" height="29.5" fill="#fff"/>
+    <rect x="0.25" y="0.25" width="19.5" height="19.5" fill="#fff"/>
     <path d="M29.5.5v29H.5V.5h29M30,0H0V30H30V0Z"/>
   </g>
 </svg>

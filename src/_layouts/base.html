@@ -12,7 +12,9 @@
       {% include site_nav.html %}
 
       <div class="content">
-        {% include site_header.html %}{{ content}}{% include site_footer.html %}
+        {% include site_header.html %}
+        <div class="contentContainer">{{ content}}</div>
+        {% include site_footer.html %}
       </div>
     </div>
     <script src="/js/display.js"></script>
