@@ -1,15 +1,18 @@
 <nav class="mainNav">
   <h2><a href="/index.html">HOME</a></h2>
   <section>
-      {% assign site_nav = collections.class | sortByPageOrder %}
-      {% for item in site_nav %}
-      <a href="{{ item.url }}">
-        <div class="classButton" {% if item.class == page.class %} aria-current="page" {% endif %}>
-          <h3>{{ item.data.class }}</h3>
-          <p>{{ item.data.startTime }}-{{ item.data.endTime }}</p>
-          <p>{{ item.data.location }}</p>
-        </div></a>
-      {% endfor %}
+    {% assign site_nav = collections.siteNav | sortByPageOrder %} {% for item in
+    site_nav %}
+    <a href="{{ item.url }}">
+      <div class="classButton">
+        <!-- {% if page.data.title == item.data.title %} aria-current="page" {% endif %} -->
+
+        <h3>{{ item.data.class }}</h3>
+        <p>{{ item.data.startTime }}-{{ item.data.endTime }}</p>
+        <p>{{ item.data.location }}</p>
+      </div></a
+    >
+    {% endfor %}
   </section>
   <h2><a href="/profile">PROFILE</a></h2>
 </nav>
