@@ -1,19 +1,19 @@
 <nav>
-  <ul>
+  <!-- <ul>
     {% assign class_nav = collections.classNav | sortByPageOrder%}
     {% for item in class_nav %}
     <li {% if page.url == item.url %} aria-current="page" {% endif %}>
       <a href="{{item.url}}">{{ item.data.pageTitle }}</a>
     </li>
     {% endfor %}
-  </ul>
-
-  <!-- <ul>
-    <li>CLASS HOME</li>
-    <li>ASSIGNMENTS</li>
-    <li>MODULES</li>
-    <li>CLASS CALENDAR</li>
-    <li>SYLLABUS</li>
-    <li>GRADE</li>
   </ul> -->
+
+  <ul>
+    <li><a href="../home/index.html">CLASS HOME</a></li>
+    <li><a href="../assignments/index.html">ASSIGNMENTS</a></li>
+    <li><a href="../modules/index.html">MODULES</a></li>
+    <li><a href="../class_calendar/index.html">CLASS CALENDAR</a></li>
+    <li><a href="../syllabus/index.html">SYLLABUS</a></li>
+    <li><a href="../grade/index.html">GRADE</a></li>
+  </ul>
 </nav>

@@ -9,6 +9,7 @@
     background-color: var(--class-color);
     display: flex;
     justify-content: space-between;
+    border-bottom: 2px solid black;
 
     h2 {
       font-family: var(--header-font);
@@ -38,6 +39,14 @@
     a {
       color: var(--content-text-color);
       text-decoration: none;
+    }
+
+    li:hover {
+      border: 2px solid var(--hover-color);
+
+      a {
+        color: var(--hover-color);
+      }
     }
 
     [aria-current] {

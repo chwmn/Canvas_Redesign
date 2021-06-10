@@ -4,7 +4,7 @@
     {% assign site_nav = collections.siteNav | sortByPageOrder %} {% for item in
     site_nav %}
     <a href="{{ item.url }}">
-      <div class="classButton">
+      <div class="classButton" style="background-color: #{{ item.data.color}}">
         <!-- {% if page.data.title == item.data.title %} aria-current="page" {% endif %} -->
 
         <h3>{{ item.data.class }}</h3>
