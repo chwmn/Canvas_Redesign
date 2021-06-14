@@ -1,0 +1,37 @@
+.contentNav {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+  li {
+    margin: 10px;
+  }
+
+  a {
+    color: var(--content-text-color);
+    text-decoration: none;
+    background-color: var(--content-bg-color);
+    border: 2px solid var(--content-text-color);
+    border-radius: 5px;
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 10px 8px 10px;
+  }
+
+  a:hover {
+    border: 2px solid var(--hover-color);
+    color: var(--hover-color);
+  }
+
+  [aria-current] {
+    background-color: var(--content-text-color);
+    border: 2px solid var(--content-text-color);
+
+    a {
+      color: var(--content-bg-color);
+    }
+  }
+}

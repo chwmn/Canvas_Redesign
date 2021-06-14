@@ -1,0 +1,21 @@
+.profile {
+  display: flex;
+  justify-content: space-between;
+
+  .proPic {
+    margin: 20px;
+    object-fit: cover;
+
+    img {
+      width: 550px;
+      height: 550px;
+      border-radius: 275px;
+      border: 2px solid var(--content-text-color);
+      object-fit: cover;
+    }
+  }
+}
+
+.crossed {
+  text-decoration: solid line-through var(--content-text-color) 1px;
+}
