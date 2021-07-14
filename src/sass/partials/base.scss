@@ -7,3 +7,32 @@ body {
   grid-template-columns: 200px 1fr;
   position: relative;
 }
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: block;
+  }
+}
+
+// @media screen and (max-width: 550px) {
+//   .container {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+
+//   .container .mainNav {
+//     display: none;
+//   }
+
+//   .homeContent {
+//     flex-wrap: wrap;
+
+//     .midContent {
+//       width: 100%;
+//     }
+
+//     .rightContent {
+//       width: 100%;
+//     }
+//   }
+// }

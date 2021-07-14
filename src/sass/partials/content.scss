@@ -1,22 +1,23 @@
 .content {
-  background-color: #fff;
+  background-color: #fffdfa;
   background-image: url(/assets/svg/grid.svg);
   grid-column: 2 / 3;
   min-height: 100vh;
   width: 100%;
+}
 
-  header {
-    background-color: var(--class-color);
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid black;
+header {
+  background-color: var(--class-color);
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
 
-    h2 {
-      font-family: var(--header-font);
-      font-size: 32px;
-      font-weight: 500;
-      margin: 20px;
-    }
+  h2 {
+    font-family: var(--header-font), Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    align-self: center;
+    margin: 20px;
   }
 }
 
@@ -30,10 +31,18 @@
   z-index: 1;
 
   h1 {
-    font-family: var(--header-font);
+    font-family: var(--header-font), Helvetica, sans-serif;
     font-size: 60px;
     margin: 20px 20px 0 20px;
   }
+}
+
+.centerAlign {
+  text-align: center;
+}
+
+.rightAlign {
+  text-align: right;
 }
 
 .pageItem {
@@ -41,7 +50,7 @@
   border: 2px solid var(--content-text-color);
   border-radius: 5px;
   display: flex;
-  font-family: var(--body-font);
+  font-family: var(--body-font), Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 500;
   justify-content: space-between;
@@ -104,4 +113,37 @@
   animation-name: rotate;
   animation-duration: 0.5s;
   transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1100px) {
+  .content header {
+    h2 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content header {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+
+    h2 {
+      margin: 5px 20px;
+      width: 400px;
+      text-align: center;
+    }
+  }
+
+  .pageHead {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      margin: 10px 10px 0 10px;
+    }
+  }
 }

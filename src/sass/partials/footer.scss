@@ -9,8 +9,28 @@ footer {
   }
 
   li {
-    font-family: var(--body-font);
+    font-family: var(--body-font), Helvetica, sans-serif;
     font-weight: 500;
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer ul {
+    display: block;
+    padding: 20px;
+    text-align: center;
+
+    li {
+      margin: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  footer ul {
+    li {
+      font-size: 12px;
+    }
   }
 }

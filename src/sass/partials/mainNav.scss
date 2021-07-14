@@ -1,7 +1,7 @@
 .mainNav {
   align-content: space-between;
   background-color: black;
-  color: white;
+  color: var(--content-bg-color);
   display: flex;
   flex-wrap: wrap;
   grid-column: 1 / 2;
@@ -9,19 +9,22 @@
   justify-content: center;
   position: fixed;
   width: 200px;
+  // left: -160px;
 
   a {
-    color: #fff;
+    color: var(--content-bg-color);
     text-decoration: none;
     text-align: center;
   }
 
   h2 {
-    font-family: var(--header-font);
+    font-family: var(--header-font), Helvetica, sans-serif;
     font-size: 32px;
     font-weight: 500;
     margin: 20px;
     text-align: center;
+    height: fit-content;
+    width: inherit;
   }
 
   a .classButton {
@@ -29,7 +32,7 @@
     border: 1px solid #000;
     border-radius: 5px;
     color: #000;
-    font-family: var(--body-font);
+    font-family: var(--body-font), Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 500;
     margin: 10px;
@@ -57,5 +60,35 @@
     background-color: #fff;
     border: 1px solid #fff;
     color: #000;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mainNav {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    align-content: center;
+
+    a .classButton {
+      display: flex;
+      justify-content: space-between;
+      width: 350px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mainNav {
+    position: relative;
+    width: 100%;
+    height: 450px;
+
+    a .classButton {
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      width: 280px;
+    }
   }
 }

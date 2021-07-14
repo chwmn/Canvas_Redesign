@@ -22,7 +22,7 @@
   li {
     border: 0.25px solid var(--content-text-color);
     color: var(--content-text-color);
-    font-family: var(--body-font);
+    font-family: var(--body-font), Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 500;
     padding: 5px;
@@ -33,7 +33,7 @@
 .days {
   li {
     border: 0.25px solid var(--content-text-color);
-    font-family: var(--body-font);
+    font-family: var(--body-font), Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 500;
     height: 100px;
@@ -42,29 +42,36 @@
 }
 
 .rightContent {
-  color: var(--content-text-color);
-  background-color: var(--content-bg-color);
-  border: 2px solid var(--content-text-color);
-  border-radius: 5px;
-  font-weight: 500;
-  justify-content: space-between;
-  margin: 20px 20px 20px 10px;
-  padding: 10px;
-  text-align: center;
   width: 30%;
+
+  div {
+    color: var(--content-text-color);
+    background-color: var(--content-bg-color);
+    border: 2px solid var(--content-text-color);
+    border-radius: 5px;
+    font-weight: 500;
+    justify-content: space-between;
+    margin: 20px 20px 20px 10px;
+    padding: 10px;
+    text-align: center;
+  }
 
   h1 {
     border-bottom: 2px dotted var(--content-text-color);
-    font-family: var(--header-font);
+    font-family: var(--header-font), Helvetica, sans-serif;
     font-size: 32px;
     font-weight: 400;
     margin: 10px;
     padding: 10px;
   }
 
+  ul {
+    width: inherit;
+  }
+
   li {
     border-bottom: 2px dotted var(--content-text-color);
-    font-family: var(--body-font);
+    font-family: var(--body-font), Helvetica, sans-serif;
     margin: 10px;
     padding: 10px;
   }
@@ -78,8 +85,53 @@
   p {
     font-size: 16px;
     line-height: 22px;
-    margin: 5px 5px 5px 20px;
+    margin: 5px;
     overflow: hidden;
     font-weight: 200;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .homeContent {
+    display: block;
+
+    .midContent {
+      width: 100%;
+
+      .wholeCalendar {
+        margin: 10px;
+      }
+    }
+
+    .rightContent {
+      width: 100%;
+      box-sizing: border-box;
+
+      div {
+        margin: 10px;
+        justify-content: center;
+
+        h1 {
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .homeContent .wholeCalendar {
+    ul li {
+      font-size: 12px;
+    }
+  }
+
+  .rightContent {
+    div {
+      ul li h4,
+      p {
+        font-size: 12px;
+      }
+    }
   }
 }
