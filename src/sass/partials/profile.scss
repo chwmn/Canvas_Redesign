@@ -7,9 +7,9 @@
     object-fit: cover;
 
     img {
-      width: 550px;
-      height: 550px;
-      border-radius: 275px;
+      width: 40vw;
+      height: 40vw;
+      border-radius: 20vw;
       border: 2px solid var(--content-text-color);
       object-fit: cover;
     }
@@ -18,4 +18,11 @@
 
 .crossed {
   text-decoration: solid line-through var(--content-text-color) 1px;
+}
+
+@media screen and (max-width: 1350px) {
+  .profile {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
